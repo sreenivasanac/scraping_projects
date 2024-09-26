@@ -1,0 +1,54 @@
+<div class="bg-primary border-primary m-auto flex w-full flex-col items-center p-6 py-0 md:rounded-2xl md:border md:p-12 md:py-10">
+  <img loading="lazy" class="h-6" src="https://assets.circle.so/z6qmxcz35fpur0chearb299edmwi" alt="Unshackled">
+  <h1 class="mt-4 text-center text-xl font-bold md:mt-6 md:text-2xl">Log in to your account</h1>
+  <div class="mt-10 w-full">
+    <div>
+      <div class="react-form">
+        <form action="/sign_in?" method="POST">
+          <input type="hidden" name="authenticity_token" value="bKRfWkFVGKfHsvbUvnfqEPT8HYyhArp5ZpXdB4Gd7iDFgOtZCOfPQQpvUmJAwxj8h8hZ+SFIP6ztCMqgztDu1Q==">
+          <div class="form-group no-border no-padding-top">
+            <div class="form-meta form-meta--default">
+              <label class="form-group__label text-dark flex font-semibold" data-testid="item-label" for="user_email">
+                <span>Email</span>
+              </label>
+            </div>
+            <div class="text-default flex w-full rounded-lg ring-current focus-within:ring-1">
+              <input class="placeholder:text-light placeholder:opacity-100 form-control" name="user[email]" id="user_email">
+            </div>
+          </div>
+          <div class="form-group no-border">
+            <div class="form-meta form-meta--default">
+              <label class="form-group__label text-dark flex font-semibold" data-testid="item-label" for="user_password">
+                <span>Password</span>
+              </label>
+            </div>
+            <div class="text-default flex w-full rounded-lg ring-current focus-within:ring-1">
+              <input class="placeholder:text-light placeholder:opacity-100 form-control" name="user[password]" type="password" id="user_password">
+            </div>
+          </div>
+          <div class="no-border">
+            <div class="text-default flex w-full rounded-lg ring-current focus-within:ring-1">
+              <input class="placeholder:text-light placeholder:opacity-100 form-control" name="user[community_id]" type="hidden" value="84492">
+            </div>
+          </div>
+          <div class="mt-6">
+            <button name="commit" type="submit" class="focus-visible:!outline-secondary font-bold transition-colors duration-200 focus-visible:!outline focus-visible:!outline-2 focus-visible:!outline-offset-2 disabled:cursor-not-allowed px-8 py-3 w-full rounded-full bg-brand text-brand-button disabled:bg-disabled transition-opacity hover:opacity-90">Sign In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="mt-8 flex flex-col items-center justify-center">
+      <div class="mb-6" id="back-link-container">
+        <span class="text-md line-height-[20px] text-default">
+          <a id="back-link" href="/sign_in?request_host=unshackled.circle.so">← Back</a>
+        </span>
+      </div>
+      <span class="text-md line-height-[20px] text-default">Not a member? Join today. <a href="go.readunshackled.com/community-discount">Sign up</a></span>
+      <div class="mt-2">
+        <div class="text-md line-height-[20px]">
+          <a class="transition duration-150 ease-in-out" href="/users/password/new?request_host=unshackled.circle.so">Forgot your password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
